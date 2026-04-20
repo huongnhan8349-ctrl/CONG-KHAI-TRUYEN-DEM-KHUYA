@@ -26,16 +26,16 @@ jobs:
       YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
 
       # chọn thumb tiêu đề bắt đầu
-      SEQ_BASE_RUN: "36"
-      TITLE_START: "16"
-      THUMB_START: "16"
+      SEQ_BASE_RUN: "68"
+      TITLE_START: "46"
+      THUMB_START: "6"
 
       # công tắc chọn poll hoặc cloudflare
       IMG_PROVIDER: cloudflare
       CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
       CF_API_TOKEN:  ${{ secrets.CF_API_TOKEN }}
       CF_MODEL: "@cf/black-forest-labs/flux-1-schnell"
-      CF_STEPS: "4"
+      CF_STEPS: "8"
 
     steps:
       - name: Checkout wrapper (repo PUBLIC)
